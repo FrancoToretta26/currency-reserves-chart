@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Currency Reserves Chart
 
-## Getting Started
+Este proyecto muestra un gráfico de las reservas de divisas a lo largo del tiempo utilizando datos de una base de datos Redshift.
 
-First, run the development server:
+Es la continuación de este proyecto: <https://github.com/FrancoToretta26/ITBA-Trabajo-Final>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Descripción
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+El proyecto utiliza React y Recharts para visualizar los datos de reservas de divisas en dólares estadounidenses y pesos argentinos. Los datos se obtienen de una API que consulta una base de datos Redshift.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Requisitos Previos
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Node.js (versión 14 o superior)
+- npm o yarn
+- Una cuenta de Redshift
 
-## Learn More
+## Instalación
 
-To learn more about Next.js, take a look at the following resources:
+1. Clona el repositorio:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   git clone https://github.com/tu-usuario/currency-reserves-chart.git
+   cd currency-reserves-chart
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. Instala las dependencias: `npm install`
 
-## Deploy on Vercel
+3. Crear un archivo en el root del proyecto `.env.local` e ingresar las credenciales que fueron enviadas por privado.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. Iniciar el proyecto en modo de desarrollo con `npm run dev`.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+5. Ingresar a <http://localhost:3000>
